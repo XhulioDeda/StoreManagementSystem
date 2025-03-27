@@ -5,7 +5,7 @@
   <!-- Central Project Bubble -->
   <g>
     <circle cx="400" cy="300" r="120" fill="#4A90E2"/>
-    <text x="400" y="300" text-anchor="middle" fill="white" font-weight="bold" font-size="20">
+    <text x="400" y="270" text-anchor="middle" fill="white" font-weight="bold" font-size="20">
       <tspan x="400" dy="-10">Store System</tspan>
       <tspan x="400" dy="25">Project</tspan>
     </text>
