@@ -26,5 +26,6 @@
 - **Fostering Collaboration:** Successful implementation doesn’t just come from one department or stakeholder. It’s a team effort. Ensuring that everyone from IT to marketing, from sales staff to suppliers, is on the same page will help create a stronger, more connected system. Collaboration and mutual understanding will drive us toward the ultimate goal: a seamless, efficient, and customer-friendly store experience.
 
 # Stakeholder Diagram
-
-
+<p align="center">
+  <img src="stakeholder.PNG" alt="Stakeholder Diagram">
+</p>
