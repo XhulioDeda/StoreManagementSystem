@@ -27,4 +27,4 @@
 
 # Stakeholder Diagram
 
-![Stakeholder Diagram](stakeholder.svg)
+
