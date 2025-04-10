@@ -67,4 +67,4 @@ This ERD serves as a blueprint for:
 
 ## Diagram
 
-![Entity Relationship Diagram for Market Romi](Entity-Relationship-Diagram.svg)
+![Entity Relationship Diagram for Market Romi](entity-relationship-Diagram.svg)
