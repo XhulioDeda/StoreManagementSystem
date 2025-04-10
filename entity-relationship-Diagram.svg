@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800">
+    <!-- Background -->
+    <rect width="1200" height="800" fill="#f9fafb" />
+    <text x="600" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Market Romi - Entity Relationship Diagram</text>
+    
+    <!-- User Entity -->
+    <rect x="100" y="100" width="200" height="180" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="100" y="100" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="200" y="125" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">User</text>
+    
+    <!-- User Attributes -->
+    <text x="110" y="160" font-family="Arial" font-size="14">PK user_id</text>
+    <text x="110" y="185" font-family="Arial" font-size="14">username</text>
+    <text x="110" y="210" font-family="Arial" font-size="14">email</text>
+    <text x="110" y="235" font-family="Arial" font-size="14">password</text>
+    <text x="110" y="260" font-family="Arial" font-size="14">user_type</text>
+    
+    <!-- Customer Entity -->
+    <rect x="100" y="350" width="200" height="180" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="100" y="350" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="200" y="375" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Customer</text>
+    
+    <!-- Customer Attributes -->
+    <text x="110" y="410" font-family="Arial" font-size="14">PK customer_id</text>
+    <text x="110" y="435" font-family="Arial" font-size="14">FK user_id</text>
+    <text x="110" y="460" font-family="Arial" font-size="14">first_name</text>
+    <text x="110" y="485" font-family="Arial" font-size="14">last_name</text>
+    <text x="110" y="510" font-family="Arial" font-size="14">phone</text>
+    
+    <!-- Employee Entity -->
+    <rect x="100" y="600" width="200" height="180" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="100" y="600" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="200" y="625" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Employee</text>
+    
+    <!-- Employee Attributes -->
+    <text x="110" y="660" font-family="Arial" font-size="14">PK employee_id</text>
+    <text x="110" y="685" font-family="Arial" font-size="14">FK user_id</text>
+    <text x="110" y="710" font-family="Arial" font-size="14">first_name</text>
+    <text x="110" y="735" font-family="Arial" font-size="14">last_name</text>
+    <text x="110" y="760" font-family="Arial" font-size="14">role</text>
+    
+    <!-- Product Entity -->
+    <rect x="500" y="100" width="200" height="200" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="500" y="100" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="600" y="125" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Product</text>
+    
+    <!-- Product Attributes -->
+    <text x="510" y="160" font-family="Arial" font-size="14">PK product_id</text>
+    <text x="510" y="185" font-family="Arial" font-size="14">name</text>
+    <text x="510" y="210" font-family="Arial" font-size="14">description</text>
+    <text x="510" y="235" font-family="Arial" font-size="14">price</text>
+    <text x="510" y="260" font-family="Arial" font-size="14">category</text>
+    <text x="510" y="285" font-family="Arial" font-size="14">stock_quantity</text>
+    
+    <!-- Order Entity -->
+    <rect x="500" y="400" width="200" height="200" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="500" y="400" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="600" y="425" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Order</text>
+    
+    <!-- Order Attributes -->
+    <text x="510" y="460" font-family="Arial" font-size="14">PK order_id</text>
+    <text x="510" y="485" font-family="Arial" font-size="14">FK customer_id</text>
+    <text x="510" y="510" font-family="Arial" font-size="14">order_date</text>
+    <text x="510" y="535" font-family="Arial" font-size="14">total_amount</text>
+    <text x="510" y="560" font-family="Arial" font-size="14">status</text>
+    <text x="510" y="585" font-family="Arial" font-size="14">shipping_address</text>
+    
+    <!-- Order Item Entity -->
+    <rect x="900" y="400" width="200" height="180" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="900" y="400" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="1000" y="425" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Order_Item</text>
+    
+    <!-- Order Item Attributes -->
+    <text x="910" y="460" font-family="Arial" font-size="14">PK order_item_id</text>
+    <text x="910" y="485" font-family="Arial" font-size="14">FK order_id</text>
+    <text x="910" y="510" font-family="Arial" font-size="14">FK product_id</text>
+    <text x="910" y="535" font-family="Arial" font-size="14">quantity</text>
+    <text x="910" y="560" font-family="Arial" font-size="14">unit_price</text>
+    
+    <!-- Inventory Entity -->
+    <rect x="900" y="100" width="200" height="180" fill="white" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <rect x="900" y="100" width="200" height="40" fill="#2563eb" stroke="#2563eb" stroke-width="2" rx="5" ry="5" />
+    <text x="1000" y="125" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Inventory</text>
+    
+    <!-- Inventory Attributes -->
+    <text x="910" y="160" font-family="Arial" font-size="14">PK inventory_id</text>
+    <text x="910" y="185" font-family="Arial" font-size="14">FK product_id</text>
+    <text x="910" y="210" font-family="Arial" font-size="14">quantity</text>
+    <text x="910" y="235" font-family="Arial" font-size="14">last_updated</text>
+    <text x="910" y="260" font-family="Arial" font-size="14">reorder_level</text>
+    
+    <!-- Relationships -->
+    <!-- User to Customer relationship -->
+    <line x1="200" y1="280" x2="200" y2="350" stroke="#4b5563" stroke-width="2" />
+    <polygon points="195,348 200,350 205,348" fill="#4b5563" />
+    <text x="210" y="320" font-family="Arial" font-size="12">1:1</text>
+    
+    <!-- User to Employee relationship -->
+    <line x1="190" y1="280" x2="190" y2="600" stroke="#4b5563" stroke-width="2" />
+    <polygon points="185,598 190,600 195,598" fill="#4b5563" />
+    <text x="170" y="440" font-family="Arial" font-size="12">1:1</text>
+    
+    <!-- Customer to Order relationship -->
+    <line x1="300" y1="440" x2="500" y2="440" stroke="#4b5563" stroke-width="2" />
+    <polygon points="498,435 500,440 498,445" fill="#4b5563" />
+    <text x="400" y="430" font-family="Arial" font-size="12">1:N</text>
+    
+    <!-- Order to Order Item relationship -->
+    <line x1="700" y1="490" x2="900" y2="490" stroke="#4b5563" stroke-width="2" />
+    <polygon points="898,485 900,490 898,495" fill="#4b5563" />
+    <text x="800" y="480" font-family="Arial" font-size="12">1:N</text>
+    
+    <!-- Product to Order Item relationship -->
+    <line x1="600" y1="300" x2="600" y2="350" stroke="#4b5563" stroke-width="2" />
+    <line x1="600" y1="350" x2="1000" y2="350" stroke="#4b5563" stroke-width="2" />
+    <line x1="1000" y1="350" x2="1000" y2="400" stroke="#4b5563" stroke-width="2" />
+    <polygon points="995,398 1000,400 1005,398" fill="#4b5563" />
+    <text x="800" y="340" font-family="Arial" font-size="12">1:N</text>
+    
+    <!-- Product to Inventory relationship -->
+    <line x1="700" y1="160" x2="900" y2="160" stroke="#4b5563" stroke-width="2" />
+    <polygon points="898,155 900,160 898,165" fill="#4b5563" />
+    <text x="800" y="150" font-family="Arial" font-size="12">1:1</text>
+</svg>
