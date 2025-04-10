@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800">
+    <!-- Background -->
+    <rect width="1200" height="800" fill="#f9fafb" />
+    <text x="600" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Market Romi - Data Flow Diagram</text>
+    
+    <!-- External Entities -->
+    <!-- Customer Entity -->
+    <rect x="100" y="150" width="160" height="80" fill="white" stroke="#047857" stroke-width="3" />
+    <text x="180" y="195" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Customer</text>
+    
+    <!-- Supplier Entity -->
+    <rect x="100" y="550" width="160" height="80" fill="white" stroke="#047857" stroke-width="3" />
+    <text x="180" y="595" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Supplier</text>
+    
+    <!-- Management Entity -->
+    <rect x="900" y="150" width="160" height="80" fill="white" stroke="#047857" stroke-width="3" />
+    <text x="980" y="195" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Management</text>
+    
+    <!-- Staff Entity -->
+    <rect x="900" y="550" width="160" height="80" fill="white" stroke="#047857" stroke-width="3" />
+    <text x="980" y="595" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Staff</text>
+    
+    <!-- Processes (Circles) -->
+    <!-- Order Processing -->
+    <circle cx="400" cy="190" r="70" fill="white" stroke="#3b82f6" stroke-width="3" />
+    <text x="400" y="175" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">1.0</text>
+    <text x="400" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Order</text>
+    <text x="400" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Processing</text>
+    
+    <!-- Inventory Management -->
+    <circle cx="400" cy="590" r="70" fill="white" stroke="#3b82f6" stroke-width="3" />
+    <text x="400" y="575" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">2.0</text>
+    <text x="400" y="600" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Inventory</text>
+    <text x="400" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Management</text>
+    
+    <!-- Reporting -->
+    <circle cx="700" cy="190" r="70" fill="white" stroke="#3b82f6" stroke-width="3" />
+    <text x="700" y="175" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">3.0</text>
+    <text x="700" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Reporting &</text>
+    <text x="700" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Analytics</text>
+    
+    <!-- Customer Support -->
+    <circle cx="700" cy="590" r="70" fill="white" stroke="#3b82f6" stroke-width="3" />
+    <text x="700" y="575" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">4.0</text>
+    <text x="700" y="600" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Customer</text>
+    <text x="700" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Support</text>
+    
+    <!-- Data Stores (Parallel Lines) -->
+    <!-- Product Database -->
+    <rect x="300" y="370" width="200" height="60" fill="white" stroke="#9333ea" stroke-width="3" />
+    <line x1="300" y1="430" x2="500" y2="430" stroke="#9333ea" stroke-width="3" />
+    <text x="400" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">D1: Product Database</text>
+    
+    <!-- Order Database -->
+    <rect x="550" y="370" width="200" height="60" fill="white" stroke="#9333ea" stroke-width="3" />
+    <line x1="550" y1="430" x2="750" y2="430" stroke="#9333ea" stroke-width="3" />
+    <text x="650" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">D2: Order Database</text>
+    
+    <!-- User Database -->
+    <rect x="800" y="370" width="200" height="60" fill="white" stroke="#9333ea" stroke-width="3" />
+    <line x1="800" y1="430" x2="1000" y2="430" stroke="#9333ea" stroke-width="3" />
+    <text x="900" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">D3: User Database</text>
+    
+    <!-- Data Flows -->
+    <!-- Customer to Order Processing -->
+    <line x1="260" y1="170" x2="330" y2="170" stroke="#374151" stroke-width="2" />
+    <polygon points="328,165 330,170 328,175" fill="#374151" />
+    <text x="295" y="160" font-family="Arial" font-size="12">Place Order</text>
+    
+    <!-- Order Processing to Customer -->
+    <line x1="330" y1="210" x2="260" y2="210" stroke="#374151" stroke-width="2" />
+    <polygon points="262,215 260,210 262,205" fill="#374151" />
+    <text x="295" y="230" font-family="Arial" font-size="12">Order Confirmation</text>
+    
+    <!-- Order Processing to Order Database -->
+    <line x1="420" y1="260" x2="610" y2="370" stroke="#374151" stroke-width="2" />
+    <polygon points="606,367 610,370 608,374" fill="#374151" />
+    <text x="500" y="300" font-family="Arial" font-size="12">Store Order Data</text>
+    
+    <!-- Order Processing to Product Database -->
+    <line x1="380" y1="260" x2="380" y2="370" stroke="#374151" stroke-width="2" />
+    <polygon points="375,368 380,370 385,368" fill="#374151" />
+    <text x="400" y="315" font-family="Arial" font-size="12">Check Product Availability</text>
+    
+    <!-- Order Database to Reporting -->
+    <line x1="670" y1="370" x2="670" y2="260" stroke="#374151" stroke-width="2" />
+    <polygon points="665,262 670,260 675,262" fill="#374151" />
+    <text x="690" y="315" font-family="Arial" font-size="12">Order Data</text>
+    
+    <!-- Product Database to Reporting -->
+    <line x1="460" y1="370" x2="650" y2="240" stroke="#374151" stroke-width="2" />
+    <polygon points="647,236 650,240 652,245" fill="#374151" />
+    <text x="520" y="290" font-family="Arial" font-size="12">Product Data</text>
+    
+    <!-- User Database to Reporting -->
+    <line x1="840" y1="370" x2="750" y2="240" stroke="#374151" stroke-width="2" />
+    <polygon points="747,245 750,240 754,243" fill="#374151" />
+    <text x="810" y="290" font-family="Arial" font-size="12">User Data</text>
+    
+    <!-- Reporting to Management -->
+    <line x1="770" y1="190" x2="900" y2="190" stroke="#374151" stroke-width="2" />
+    <polygon points="898,185 900,190 898,195" fill="#374151" />
+    <text x="835" y="175" font-family="Arial" font-size="12">Sales Reports</text>
+    
+    <!-- Management to Inventory Management -->
+    <line x1="960" y1="230" x2="450" y2="530" stroke="#374151" stroke-width="2" />
+    <polygon points="446,534 450,530 455,532" fill="#374151" />
+    <text x="650" y="350" font-family="Arial" font-size="12">Inventory Requirements</text>
+    
+    <!-- Inventory Management to Product Database -->
+    <line x1="400" y1="520" x2="400" y2="430" stroke="#374151" stroke-width="2" />
+    <polygon points="395,432 400,430 405,432" fill="#374151" />
+    <text x="440" y="480" font-family="Arial" font-size="12">Update Inventory</text>
+    
+    <!-- Supplier to Inventory Management -->
+    <line x1="260" y1="590" x2="330" y2="590" stroke="#374151" stroke-width="2" />
+    <polygon points="328,585 330,590 328,595" fill="#374151" />
+    <text x="295" y="575" font-family="Arial" font-size="12">Supply Products</text>
+    
+    <!-- Inventory Management to Supplier -->
+    <line x1="330" y1="610" x2="260" y2="610" stroke="#374151" stroke-width="2" />
+    <polygon points="262,615 260,610 262,605" fill="#374151" />
+    <text x="295" y="630" font-family="Arial" font-size="12">Purchase Orders</text>
+    
+    <!-- Customer to Customer Support -->
+    <line x1="180" y1="230" x2="650" y2="535" stroke="#374151" stroke-width="2" />
+    <polygon points="647,539 650,535 654,533" fill="#374151" />
+    <text x="350" y="365" font-family="Arial" font-size="12">Inquiries/Issues</text>
+    
+    <!-- Customer Support to Customer -->
+    <line x1="640" y1="545" x2="170" y2="240" stroke="#374151" stroke-width="2" />
+    <polygon points="173,245 170,240 168,235" fill="#374151" />
+    <text x="335" y="385" font-family="Arial" font-size="12">Resolutions/Updates</text>
+    
+    <!-- Staff to Customer Support -->
+    <line x1="900" y1="580" x2="770" y2="580" stroke="#374151" stroke-width="2" />
+    <polygon points="772,585 770,580 772,575" fill="#374151" />
+    <text x="835" y="565" font-family="Arial" font-size="12">Support Provision</text>
+    
+    <!-- Customer Support to Order Database -->
+    <line x1="700" y1="520" x2="650" y2="430" stroke="#374151" stroke-width="2" />
+    <polygon points="646,434 650,430 654,432" fill="#374151" />
+    <text x="660" y="480" font-family="Arial" font-size="12">Update Orders</text>
+    
+    <!-- Customer Support to User Database -->
+    <line x1="760" y1="545" x2="880" y2="430" stroke="#374151" stroke-width="2" />
+    <polygon points="876,435 880,430 885,432" fill="#374151" />
+    <text x="850" y="490" font-family="Arial" font-size="12">Update User Info</text>
+    
+    <!-- Order Processing to Customer Support -->
+    <line x1="450" y1="240" x2="650" y2="540" stroke="#374151" stroke-width="2" />
+    <polygon points="646,536 650,540 653,538" fill="#374151" />
+    <text x="530" y="400" font-family="Arial" font-size="12">Order Issues</text>
+    
+    <!-- Staff to Inventory Management -->
+    <line x1="900" y1="590" x2="470" y2="590" stroke="#374151" stroke-width="2" />
+    <polygon points="472,595 470,590 472,585" fill="#374151" />
+    <text x="685" y="610" font-family="Arial" font-size="12">Stock Management</text>
+</svg>
