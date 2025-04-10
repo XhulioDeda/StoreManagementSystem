@@ -36,4 +36,4 @@ This BPMN diagram serves as a visual guide for understanding and optimizing the 
 
 ## Diagram
 
-![BPMN Diagram for Market Romi](bpmn-diagram.svg)
+![BPMN Diagram for Market Romi](BPMN-diagram.svg)
