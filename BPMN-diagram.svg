@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 750">
+    <!-- Background -->
+    <rect width="1200" height="750" fill="#f9fafb" />
+    <text x="600" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Market Romi Order Processing - BPMN Diagram</text>
+    
+    <!-- Swimlanes -->
+    <rect x="50" y="70" width="1100" height="160" fill="#e5e7eb" stroke="#d1d5db" stroke-width="1" />
+    <text x="100" y="100" font-family="Arial" font-size="16" font-weight="bold">Customer</text>
+    
+    <rect x="50" y="230" width="1100" height="160" fill="#eff6ff" stroke="#d1d5db" stroke-width="1" />
+    <text x="100" y="260" font-family="Arial" font-size="16" font-weight="bold">System</text>
+    
+    <rect x="50" y="390" width="1100" height="160" fill="#f0fdf4" stroke="#d1d5db" stroke-width="1" />
+    <text x="100" y="420" font-family="Arial" font-size="16" font-weight="bold">Sales Staff</text>
+    
+    <rect x="50" y="550" width="1100" height="160" fill="#fef2f2" stroke="#d1d5db" stroke-width="1" />
+    <text x="100" y="580" font-family="Arial" font-size="16" font-weight="bold">Inventory Staff</text>
+    
+    <!-- Start Event -->
+    <circle cx="150" cy="150" r="20" fill="white" stroke="#4b5563" stroke-width="2" />
+    <circle cx="150" cy="150" r="16" fill="#4b5563" />
+    
+    <!-- Tasks - Customer Lane -->
+    <rect x="220" y="120" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="280" y="155" font-family="Arial" font-size="12" text-anchor="middle">Browse Products</text>
+    
+    <rect x="400" y="120" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="460" y="155" font-family="Arial" font-size="12" text-anchor="middle">Place Order</text>
+    
+    <rect x="800" y="120" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="860" y="155" font-family="Arial" font-size="12" text-anchor="middle">Track Order</text>
+    
+    <!-- Tasks - System Lane -->
+    <rect x="580" y="280" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="640" y="315" font-family="Arial" font-size="12" text-anchor="middle">Process Order</text>
+    
+    <rect x="800" y="280" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="860" y="315" font-family="Arial" font-size="12" text-anchor="middle">Update Order Status</text>
+    
+    <!-- Tasks - Sales Staff Lane -->
+    <rect x="580" y="440" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="640" y="475" font-family="Arial" font-size="12" text-anchor="middle">Review Order</text>
+    
+    <rect x="800" y="440" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="860" y="475" font-family="Arial" font-size="12" text-anchor="middle">Prepare Order</text>
+    
+    <!-- Tasks - Inventory Staff Lane -->
+    <rect x="580" y="600" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="640" y="635" font-family="Arial" font-size="12" text-anchor="middle">Check Inventory</text>
+    
+    <rect x="800" y="600" width="120" height="60" rx="10" ry="10" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="860" y="635" font-family="Arial" font-size="12" text-anchor="middle">Update Inventory</text>
+    
+    <!-- Gateway -->
+    <rect x="660" y="520" width="40" height="40" transform="rotate(45 680 540)" fill="white" stroke="#4b5563" stroke-width="2" />
+    <text x="680" y="545" font-family="Arial" font-size="12" text-anchor="middle">Stock?</text>
+    
+    <!-- End Event -->
+    <circle cx="1000" cy="150" r="20" fill="white" stroke="#4b5563" stroke-width="2" />
+    <circle cx="1000" cy="150" r="16" fill="white" />
+    <circle cx="1000" cy="150" r="12" fill="#4b5563" stroke="#4b5563" stroke-width="2" />
+    
+    <!-- Flow Arrows -->
+    <!-- Start to Browse -->
+    <line x1="170" y1="150" x2="220" y2="150" stroke="#4b5563" stroke-width="2" />
+    <polygon points="218,145 220,150 218,155" fill="#4b5563" />
+    
+    <!-- Browse to Place Order -->
+    <line x1="340" y1="150" x2="400" y2="150" stroke="#4b5563" stroke-width="2" />
+    <polygon points="398,145 400,150 398,155" fill="#4b5563" />
+    
+    <!-- Place Order to Process Order -->
+    <line x1="460" y1="180" x2="460" y2="310" stroke="#4b5563" stroke-width="2" />
+    <line x1="460" y1="310" x2="580" y2="310" stroke="#4b5563" stroke-width="2" />
+    <polygon points="578,305 580,310 578,315" fill="#4b5563" />
+    
+    <!-- Process Order to Review Order -->
+    <line x1="640" y1="340" x2="640" y2="440" stroke="#4b5563" stroke-width="2" />
+    <polygon points="635,438 640,440 645,438" fill="#4b5563" />
+    
+    <!-- Review Order to Check Inventory -->
+    <line x1="640" y1="500" x2="640" y2="600" stroke="#4b5563" stroke-width="2" />
+    <polygon points="635,598 640,600 645,598" fill="#4b5563" />
+    
+    <!-- Check Inventory to Gateway -->
+    <line x1="700" y1="630" x2="720" y2="630" stroke="#4b5563" stroke-width="2" />
+    <line x1="720" y1="630" x2="720" y2="580" stroke="#4b5563" stroke-width="2" />
+    <line x1="720" y1="580" x2="680" y2="540" stroke="#4b5563" stroke-width="2" />
+    <polygon points="682,544 680,540 676,538" fill="#4b5563" />
+    
+    <!-- Gateway to Update Inventory (Yes path) -->
+    <line x1="700" y1="560" x2="800" y2="630" stroke="#4b5563" stroke-width="2" />
+    <text x="740" y="585" font-family="Arial" font-size="12">Yes</text>
+    <polygon points="795,632 800,630 798,625" fill="#4b5563" />
+    
+    <!-- Update Inventory to Prepare Order -->
+    <line x1="860" y1="600" x2="860" y2="500" stroke="#4b5563" stroke-width="2" />
+    <polygon points="855,502 860,500 865,502" fill="#4b5563" />
+    
+    <!-- Prepare Order to Update Order Status -->
+    <line x1="860" y1="440" x2="860" y2="340" stroke="#4b5563" stroke-width="2" />
+    <polygon points="855,342 860,340 865,342" fill="#4b5563" />
+    
+    <!-- Update Order Status to Track Order -->
+    <line x1="860" y1="280" x2="860" y2="180" stroke="#4b5563" stroke-width="2" />
+    <polygon points="855,182 860,180 865,182" fill="#4b5563" />
+    
+    <!-- Track Order to End Event -->
+    <line x1="920" y1="150" x2="980" y2="150" stroke="#4b5563" stroke-width="2" />
+    <polygon points="978,145 980,150 978,155" fill="#4b5563" />
+    
+    <!-- Gateway to Process Order (No stock path) -->
+    <line x1="660" y1="540" x2="560" y2="540" stroke="#4b5563" stroke-width="2" />
+    <line x1="560" y1="540" x2="560" y2="310" stroke="#4b5563" stroke-width="2" />
+    <text x="570" y="530" font-family="Arial" font-size="12">No</text>
+    <polygon points="555,312 560,310 565,312" fill="#4b5563" />
+</svg>
